@@ -41,7 +41,24 @@ footer {
     padding: 10px;
 }
 
-
+#misc-button-add {
+    margin: 0 10px;
+}
+#misc-button-subtract {
+    margin-left: 0;
+    margin-right: 10px;
+}
+#misc-button-multiply {
+    margin-left: 0;
+    margin-right: 10px;
+}
+#misc-button-divide {
+    margin-left: 0;
+    margin-right: 10px;
+}
+#misc-number-2 {
+    margin-right: 10px;
+}
 
 #add-number-1 {
     margin-left: 65px;

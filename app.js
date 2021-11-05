@@ -5,6 +5,39 @@ import { multiply } from './utils.js';
 import { divide } from './utils.js';
 
 // pull DOM elements
+const miscNumber1 = document.getElementById('misc-number-1');
+const miscNumber2 = document.getElementById('misc-number-2');
+const miscButtonAdd = document.getElementById('misc-button-add');
+const miscButtonSubtract = document.getElementById('misc-button-subtract');
+const miscButtonMultiply = document.getElementById('misc-button-multiply');
+const miscButtonDivide = document.getElementById('misc-button-divide');
+const miscAnswer = document.getElementById('misc-answer');
+
+miscButtonAdd.addEventListener('click', () => {
+    const sum = add(Number(miscNumber1.value), Number(miscNumber2.value));
+    console.log(sum);
+    miscAnswer.textContent = sum;
+});
+
+miscButtonSubtract.addEventListener('click', () => {
+    const difference = subtract(Number(miscNumber1.value), Number(miscNumber2.value));
+    console.log(difference);
+    miscAnswer.textContent = difference;
+});
+
+miscButtonMultiply.addEventListener('click', () => {
+    const product = multiply(Number(miscNumber1.value), Number(miscNumber2.value));
+    console.log(product);
+    miscAnswer.textContent = product;
+});
+
+miscButtonDivide.addEventListener('click', () => {
+    const quotient = divide(Number(miscNumber1.value), Number(miscNumber2.value));
+    console.log(quotient);
+    miscAnswer.textContent = quotient;
+});
+
+
 const addNumber1 = document.getElementById('add-number-1');
 const addNumber2 = document.getElementById('add-number-2');
 const addButton = document.getElementById('add-button');
